@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offline demo — chat vs evaluated retrieval</title>
+  <style>
+    @font-face {
+      font-family: "Mona Sans";
+      src: url("../fonts/mona-sans-latin-400.woff2") format("woff2");
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Mona Sans";
+      src: url("../fonts/mona-sans-latin-700.woff2") format("woff2");
+      font-weight: 700;
+      font-display: swap;
+    }
+    :root { --bg:#010005; --fg:#f4f7fb; --muted:#b7c0d0; --line:#252a36; --blue:#3571f0; --miss:#d64545; --ok:#3571f0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font-family: "Mona Sans", sans-serif; }
+    main { max-width: 1100px; margin: 0 auto; padding: 48px 32px 80px; }
+    h1 { font-size: 28px; letter-spacing: -0.03em; }
+    p.note { color: var(--muted); max-width: 62ch; line-height: 1.45; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; }
+    .pane { border: 1px solid var(--line); padding: 24px; min-height: 280px; }
+    h2 { margin: 0 0 12px; font-size: 16px; color: var(--muted); font-weight: 500; }
+    .bubble { font-size: 18px; line-height: 1.45; }
+    .chunk { margin-top: 16px; padding: 12px; background: #0c0e14; font-size: 16px; line-height: 1.4; }
+    .badge { margin-top: 20px; font-size: 15px; }
+    .miss { color: var(--miss); }
+    .ok { color: var(--ok); }
+    nav { display: flex; gap: 8px; margin-top: 28px; }
+    button { font: inherit; background: transparent; color: var(--fg); border: 1px solid var(--line); padding: 8px 14px; cursor: pointer; }
+    button[aria-current="true"] { border-color: var(--blue); color: var(--blue); }
+    kbd { border: 1px solid var(--line); padding: 0 6px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Backup stills. Chat vs a system that can be wrong in public.</h1>
+    <p class="note">No network. Pre-scripted. Document: public facts only (policy date, Centre opening). Not client data. Keys <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd>. If wifi dies on stage, open this file.</p>
+    <nav>
+      <button type="button" data-step="0" aria-current="true">1 Chat</button>
+      <button type="button" data-step="1">2 Retrieval</button>
+      <button type="button" data-step="2">3 The miss</button>
+    </nav>
+    <div class="row" data-panel="0">
+      <div class="pane">
+        <h2>Chatbot</h2>
+        <p class="bubble">How many public GPUs does Nepal’s National AI Centre have for students?</p>
+      </div>
+      <div class="pane">
+        <h2>Answer</h2>
+        <p class="bubble">“The Centre has thousands of processing units ready for startups and students, matching the sovereign compute announcement.”</p>
+        <p class="badge miss">Confident. No source. Mixes a budget speech with a small-room Centre.</p>
+      </div>
+    </div>
+    <div class="row" data-panel="1" hidden>
+      <div class="pane">
+        <h2>Same question</h2>
+        <p class="bubble">How many public GPUs does Nepal’s National AI Centre have for students?</p>
+      </div>
+      <div class="pane">
+        <h2>Retrieved chunk</h2>
+        <p class="chunk">National AI Centre opened 10 November 2025. Reporting described it as starting in a small room. Cabinet approved the National AI Policy on 11 August 2025. No GPU ledger in this file.</p>
+        <p class="badge ok">Grounded in the file. Still not a GPU count.</p>
+      </div>
+    </div>
+    <div class="row" data-panel="2" hidden>
+      <div class="pane">
+        <h2>Eval item</h2>
+        <p class="bubble">Gold answer: <strong>NO RELIABLE DATA</strong> on a public GPU count. Centre ≠ Syuchatar budget sentence (29 May 2026).</p>
+      </div>
+      <div class="pane">
+        <h2>Score</h2>
+        <p class="bubble">Chat: fail (invented capacity). Retrieval: pass if it refuses or says the file has no count. Fail if it quotes “thousands” from the budget speech as a commissioned cluster.</p>
+        <p class="badge ok">That filter is the job.</p>
+      </div>
+    </div>
+  </main>
+  <script>
+    const panels = [...document.querySelectorAll("[data-panel]")];
+    const buttons = [...document.querySelectorAll("button[data-step]")];
+    function show(i) {
+      panels.forEach((p, n) => { p.hidden = n !== i; });
+      buttons.forEach((b, n) => b.setAttribute("aria-current", n === i ? "true" : "false"));
+    }
+    buttons.forEach((b) => b.addEventListener("click", () => show(Number(b.dataset.step))));
+    document.addEventListener("keydown", (e) => {
+      if (e.key >= "1" && e.key <= "3") show(Number(e.key) - 1);
+    });
+  </script>
+</body>
+</html>

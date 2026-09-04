@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI in Nepal: Where We Stand and Where We're Headed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--
+  THESIS: A dark product-conference keynote that treats Nepal evidence as the product, refusing AI-101 tiles, robot clipart, and a green computation-pad leftover.
+  OWN-WORLD: Near-black #010005 field, Mona Sans mass type, Hubot Sans for measured numbers, one accent #3571F0, orange reserved for v8.0, footer rail, no glass bento, no kickers.
+  STORY: Each slide is one organiser question, a one-line answer always on the glass, and named examples the speaker can read without clicking.
+  FIRST VIEWPORT: Left-locked title owning the 16:9 frame; Nepal in blue; speaker, date, venue and event marks on a thin bottom rail; empty black elsewhere.
+  FORM: Category-standard dark keynote (canon), user-chosen; composition A left-locked mass; seed 9e75f519.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <div class="stage">
+    <article class="slide title-slide on" data-slide="1">
+      <h1>AI in <span class="blue">Nepal</span>
+      <br>Where We Stand<br>and Where<br>We’re Headed</h1>
+    </article>
+
+    <article class="slide intro-slide" data-slide="2">
+      <div class="intro">
+        <div class="intro-copy">
+          <h1>Subash<br>Pandey</h1>
+          <p class="intro-role">AI/ML Engineer · from Kathmandu</p>
+          <p class="intro-lede">I build AI systems for a living. Chat, voice, evaluation, the product around them.</p>
+          <ul class="intro-ed">
+            <li><b>Scopic Software LLC</b><span>Current</span></li>
+            <li><b>University of Exeter</b><span>MSc Data Science</span></li>
+          </ul>
+        </div>
+        <div class="intro-photos">
+          <figure class="intro-shot intro-shot-grad">
+            <img src="../assets/event-marks/graduation.webp" alt="Graduation day at the University of Exeter">
+          </figure>
+          <figure class="intro-shot intro-shot-uk">
+            <img src="../assets/event-marks/UK_stay.webp" alt="In London, with Tower Bridge behind">
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide" data-slide="3">
+      <h2>What this session answers.</h2>
+      <p class="answer wide">The six discussion areas.</p>
+      <div class="topics">
+        <div>
+          <h3>1 · Landscape</h3>
+          <p>Where adoption actually is. Nepal against its neighbours. The dated milestones.</p>
+        </div>
+        <div>
+          <h3>2 · Industries</h3>
+          <p>Agriculture, finance, health, education, government, and the empty sectors.</p>
+        </div>
+        <div>
+          <h3>3 · Startups/Companies</h3>
+          <p>The money that exists and the hole in the middle. Company shapes you can join or found. Local vs global.</p>
+        </div>
+        <div>
+          <h3>4 · Generative AI</h3>
+          <p>Chat, agents, automation. The harness around the model: files, tools, loops, limits, logs.</p>
+        </div>
+        <div>
+          <h3>5 · Jobs</h3>
+          <p>Eight pathways, and the real titles inside them. What Kathmandu listings actually asked. How a first job happens.</p>
+        </div>
+        <div>
+          <h3>6 · Challenges</h3>
+          <p>Power, data, people, rules. Ethics, privacy, accountability, governance. The duty is ahead of the law.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="4">
+      <h2>Where does Nepal stand right now?</h2>
+      <p class="answer wide">Uneven. Everyone uses chatbots. We sell only expertise and man hours. We own very few AI products. The paperwork got loud in the last twelve months. That is not an AI industry yet.</p>
+      <div class="ledger two">
+        <div class="cell hot">
+          <h3>Adoption you can see</h3>
+          <ul>
+            <li>This room. Almost everyone here has used a chat model this week. ICT Meetup v7 was already AI-themed, January 2024.</li>
+            <li>Bank and tech company chatbots are getting common: <b>Saathi</b> at NIC Asia, <b>eVA</b> at eSewa., and more.</li>
+            <li>One campus survey of health students: <b>300 of 356</b> use generative AI often or always. <em class="tag">one campus, 2026</em></li>
+          </ul>
+        </div>
+        <div class="cell">
+          <h3>What we actually sell</h3>
+          <ul>
+            <li>Data labelling: <b>CloudFactory</b>. That is how Nepal entered the supply chain.</li>
+            <li>Export SWE/AI: <b>Leapfrog</b>, <b>Cotiviti</b>, <b>Verisk</b>, <b>Wiseyak</b>, <b>Deerwalk / Cedar Gate</b>.</li>
+            <li>Talent + education: <b>Fusemachines</b>. Fellowship, then Nasdaq <b>FUSE</b>.</li>
+            <li>Cyber / experts in the loop: <b>SecurityPal</b>. Nepal bench, foreign buyers.</li>
+            <li>Research: <b>NAAMII</b>, plus Nepali-language papers. A lab, not a product industry.</li>
+            <li>Thin local product: <b>Second Eye / ChestGuru</b> at TUTH. A trial, not a product industry.</li>
+          </ul>
+        </div>
+        <div class="cell">
+          <h3>What the state did</h3>
+          <ul>
+            <li><b>National AI Policy</b>, Aug 2025. Targets: 5,000 AI professionals, top-50 on a global scorecard, AI literacy in schools.</li>
+            <li><b>National AI Centre</b>, 10 Nov 2025. <span class="miss">Couldn't find what exactly does this Center do.</span> </li>
+            <li><b>Central bank AI rules for banks</b>, Dec 2025. Short rulebook focusing on risks, governance and compliance.</li>
+            <li><b>Budget line for a state AI computer centre</b>, 29 May 2026. Announced, not built.</li>
+          </ul>
+        </div>
+        <div class="cell">
+          <h3>What Numbers I cannot fake</h3>
+          <ul>
+            <li class="no">How many AI startups Nepal has. There is no register.</li>
+            <li class="no">How many state-owned AI-capable computers exist. There is no count.</li>
+            <li class="no">What share of IT exports is AI. Nobody measures it.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="strip">Short version: <b>strong on people, thin on products, loud on paper.</b></p>
+    </article>
+
+    <article class="slide packed" data-slide="5">
+      <h2>Where do we sit globally? And how fast is this moving?</h2>
+      <p class="answer wide">On the scorecard, Nepal is 106 of 195. Chat spread fast. Working systems, and agents that do a job, are still rare. The models themselves are getting harder to measure.</p>
+      <div class="three-charts">
+        <div>
+          <p class="chart-head">Oxford rankings, Jan 2026 · 195 governments · lower is better</p>
+          <div class="rank-list">
+            <div class="rank-row">
+              <span>India</span>
+              <span class="place">27</span>
+              <span class="of">of 195</span>
+            </div>
+            <div class="rank-row">
+              <span>Bangladesh</span>
+              <span class="place">75</span>
+              <span class="of">of 195</span>
+            </div>
+            <div class="rank-row">
+              <span>Pakistan</span>
+              <span class="place">81</span>
+              <span class="of">of 195</span>
+            </div>
+            <div class="rank-row here">
+              <span>Nepal</span>
+              <span class="place">106</span>
+              <span class="of">of 195</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="chart-head">In companies, 2026 · share of surveyed organisations</p>
+          <div class="bars true-scale">
+            <div class="bar-row here"><span>Use AI somewhere</span><div class="bar-track"><span class="bar-fill" style="--w:88%"></span></div><span class="num">88%</span></div>
+            <div class="bar-row"><span>Generative AI in a team</span><div class="bar-track"><span class="bar-fill" style="--w:79%"></span></div><span class="num">79%</span></div>
+            <div class="bar-row miss-row"><span>Agents that run a job</span><div class="bar-track"><span class="bar-fill" style="--w:10%"></span></div><span class="num">≤10%</span></div>
+          </div>
+          <p class="bar-axis" aria-hidden="true"><span>0</span><span>50</span><span>100</span></p>
+        </div>
+        <div>
+          <p class="chart-head">How fast the models are moving · METR, Sky News Feb 2026</p>
+          <ul class="speed-facts">
+            <li><span class="n">Opus 4.6</span>Latest METR score. Beat every previous model. The curve sped up. It did not flatten.</li>
+            <li><span class="n">50%</span>The headline number is a human software task finished in <b>half the time</b>. Fail as often as succeed.</li>
+            <li><span class="n miss">Testers are running out of tasks that are still too hard.</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="strip">Nepal’s strongest bar is <b>rules written down</b>. The two weakest are <b>government using AI</b> and <b>building and spreading it</b></p>
+    </article>
+
+    <article class="slide packed" data-slide="6">
+      <h2>Key milestones. What actually happened, and when?</h2>
+      <p class="answer wide">People working since 2010. Paperwork since 2025. Products we own are still the thin line.</p>
+      <div class="axis-grid">
+        <div></div>
+        <div class="axis-year">2010</div>
+        <div class="axis-year">2013</div>
+        <div class="axis-year">2019</div>
+        <div class="axis-year">2024</div>
+        <div class="axis-year">2025</div>
+        <div class="axis-year">2026</div>
+
+        <h3 class="axis-lab people">People</h3>
+        <div class="axis-cell on"><b>CloudFactory</b><span>Kathmandu. Labelling for global AI.</span></div>
+        <div class="axis-cell on"><b>Fusemachines</b><span>US company, Nepali engineers.</span></div>
+        <div class="axis-cell on"><b>Rice maps</b><span>MoALD × ICIMOD. Satellite, not chat.</span></div>
+        <div class="axis-cell on"><b>Saathi · eVA</b><span>RAG chatbots</span></div>
+        <div class="axis-cell on"><b>FUSE · ChestGuru</b><span>Nasdaq, 23 Oct. TUTH trial, Dec.</span></div>
+        <div class="axis-cell on"><b>Lamina YC</b><span>Nepali founders. Company is in SF.</span></div>
+
+        <h3 class="axis-lab paper">Paper</h3>
+        <div class="axis-cell"><b>ETA 2006</b><span>Still the digital law we run on.</span></div>
+        <div class="axis-cell"><b>ICT Policy</b><span>2015. Digital plans, not AI plans.</span></div>
+        <div class="axis-cell"><b>Digital Nepal</b><span>Framework, 2019.</span></div>
+        <div class="axis-cell dim-cell"><span>—</span></div>
+        <div class="axis-cell hot-cell"><b>Policy · Centre · NRB</b><span>Aug · Nov · Dec. A to-do list.</span></div>
+        <div class="axis-cell hot-cell"><b>AI Compute Center announced</b><span>Budgeted. Not built.</span></div>
+
+        <h3 class="axis-lab campus">Campus</h3>
+        <div class="axis-cell dim-cell"><span>—</span></div>
+        <div class="axis-cell dim-cell"><span>—</span></div>
+        <div class="axis-cell dim-cell"><span>—</span></div>
+        <div class="axis-cell on"><b>ICT Meetup v7</b><span>This campus. Already AI-themed.</span></div>
+        <div class="axis-cell on"><b>WHO × NAAMII</b><span>Agreement through Sep 2027.</span></div>
+        <div class="axis-cell on"><b>193 teams</b><span>Global IME hackathon. 14 in the final.</span></div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="7">
+      <h2>What is actually running, by industry?</h2>
+      <p class="answer wide">Named systems you can look up.</p>
+      <div class="matrix tight">
+        <div class="mx-h">Sector</div>
+        <div class="mx-h">Running</div>
+        <div class="mx-h">What it is</div>
+
+        <div class="mx-n">Agriculture</div>
+        <div><b>Rice maps, 21 Terai districts</b><span>2020–21. Used toward the rice support price.</span></div>
+        <div><b>Random Forest</b><span>Classical ML in a ministry workflow.</span></div>
+
+        <div class="mx-n">Finance</div>
+        <div><b>Saathi</b> at NIC Asia, Jun 2024. <b>eVA</b> at eSewa, payments claimed.<span>Vendor RAG. Company says eVA can top up and send money.</span></div>
+        <div><b>Chat / small agent</b><span>Vendor 94.5% is a company claim.</span></div>
+
+        <div class="mx-n">Health</div>
+        <div><b>ChestGuru at TUTH</b><span>Dec 2025. Second Eye. Tested on 522 old scans.</span></div>
+        <div><span class="st trial">Trial</span><span>WHO × NAAMII is a research agreement through Sep 2027.</span></div>
+
+        <div class="mx-n">Disaster</div>
+        <div><b>SAFE-RISCCS</b> landslide pilot, Nuwakot and Dhading.<span>Rain, ground movement, satellite. Humans still compare to a threshold.</span></div>
+        <div><span class="st trial">Pilot</span><span>Not a national early-warning product.</span></div>
+
+        <div class="mx-n">Cyber</div>
+        <div><b>Guardsix / Logpoint</b> SIEM from Lalitpur. <b>Vairav</b> Trident SOC.<span>Export security software. “AI-powered” is a company claim.</span></div>
+        <div><b>Foreign clients</b><span>Not a Kathmandu SOC industry census.</span></div>
+
+        <div class="mx-n">Robotics</div>
+        <div><b>Paaila</b> <span>Waiter robots</span></div>
+        <div><b>Hardware</b><span>Company claims Nepali ASR/TTS.</span></div>
+
+        <div class="mx-n">Export shops</div>
+        <div><b>Leapfrog</b> · <b>Cotiviti</b> · <b>Deerwalk / Cedar Gate</b><span>Serving clients abroad. Most of the paid seats.</span></div>
+        <div><b>Foreign clients</b><span>Jul 2026: Leapfrog listed for AWS agentic-AI consulting.</span></div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="8">
+      <h2>Where is AI still missing?</h2>
+      <p class="answer wide">This is the rest of the map. Education has users, not products. Government has servers, not models. Whole industries have no named system I can show you. That gap is a company, if you can name a buyer.</p>
+      <div class="gap-map">
+        <div>
+          <h3>Education · users, not a product</h3>
+          <ul>
+            <li>Formal AI degree; dominated by foreign affiliated universities.</li>
+            <li>ChatGPT in class. College Hackathons, AI showcases. Club events. That is literacy. It is already in this room.</li>
+            <li>Fellowships and internships.</li>
+            <li>No ministry teaching system I will name.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Government · servers, not models</h3>
+          <ul>
+            <li>Policy, centre, budget line: only in words; not in implementation.</li>
+            <li>Government cloud, Jul 2026: <b>927 VMs for 359 offices</b>. Hosting, not AI.</li>
+            <li><b>Nagarik App:</b> digital services. No AI feature I will stand behind.</li>
+          </ul>
+        </div>
+        <div class="gap-void">
+          <h3>Empty on evidence</h3>
+          <ul>
+            <li>Tourism</li>
+            <li>Factories</li>
+            <li>Logistics</li>
+            <li>Media</li>
+            <li>Courts</li>
+            <li>Telecom</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="9">
+      <h2>Startups, local versus global, campus and industry.</h2>
+      <p class="answer wide">Two markets. Here: a hole in the money, and a ranked startup list that is mostly wallets and tutorials, not AI. There: labs, products, services, and a campus path.</p>
+      <div class="markets">
+        <div>
+          <h3>Here</h3>
+          <p class="chart-head">Cheque sizes for a young software company · schematic, not a log scale</p>
+          <div class="gap-bar" aria-hidden="true">
+            <i class="on"></i>
+            <i class="on"></i>
+            <i class="hole"></i>
+            <i class="on"></i>
+          </div>
+          <div class="gap-lab">
+            <span>Gov <b>Rs 2.5m</b></span>
+            <span>Seed <b>Rs 1–5m</b></span>
+            <span class="miss">Hole <b>Rs 5–100m</b></span>
+            <span>Funds <b>Rs 100m+</b></span>
+          </div>
+          <p class="chart-head">StartupBlink Sep 2026 · ranked startups, not an AI census</p>
+          <div class="blink-meta">
+            <div><b>#101</b><span>world</span></div>
+            <div><b>#5</b><span>South Asia</span></div>
+            <div><b>109</b><span>listed</span></div>
+          </div>
+          <div class="bars true-scale blink-bars">
+            <div class="bar-row here"><span>Programiz · edtech</span><div class="bar-track"><span class="bar-fill" style="--w:100%"></span></div><span class="num">7.1M</span></div>
+            <div class="bar-row"><span>eSewa · payments</span><div class="bar-track"><span class="bar-fill" style="--w:7%"></span></div><span class="num">492k</span></div>
+            <div class="bar-row"><span>Khalti · wallet</span><div class="bar-track"><span class="bar-fill" style="--w:2.4%"></span></div><span class="num">168k</span></div>
+            <div class="bar-row"><span>Fonepay · payments</span><div class="bar-track"><span class="bar-fill" style="--w:2.2%"></span></div><span class="num">159k</span></div>
+          </div>
+          <p class="bar-axis blink-axis" aria-hidden="true"><span>0</span><span>monthly visits</span><span>7.1M</span></p>
+        </div>
+        <div>
+          <h3>There</h3>
+          <p class="chart-head">Same industry, different cap table. Named seats you can actually search.</p>
+          <div class="mkt-shapes tall">
+            <div><b>Frontier labs</b><span>OpenAI, Anthropic, Google DeepMind, Meta. They train the models you rent. Local cheques do not cut it.</span></div>
+            <div><b>Application products</b><span>Cursor, Perplexity, Harvey, Notion. A buyer, a price, a test. The honest global bet.</span></div>
+            <div><b>Services</b><span>Accenture, Deloitte, IBM, Capgemini, Scale. Forward-deployed, data, applied. Search those titles abroad.</span></div>
+            <div><b>Campus path</b><span>OpenAI / Anthropic internships. Google Student Researcher. DeepMind. YC. MIT, Stanford, CMU labs. That is the global on-ramp.</span></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="10">
+      <h2>Generative AI, agents, automation. What actually changed?</h2>
+      <p class="answer wide">Not the model. We rent that. The job is the harness: a spec, files, typed tools, a budgeted loop, a policy, a trace you can replay.</p>
+      <div class="harness-split">
+        <ol class="harness deep">
+          <li>
+            <span class="harness-n">1</span>
+            <div>
+              <h3><span class="fn">spec</span>(requirements)</h3>
+              <p>What right looks like, in writing. A rubric, a fail case, a stop condition. Before you prompt.</p>
+            </div>
+          </li>
+          <li>
+            <span class="harness-n">2</span>
+            <div>
+              <h3><span class="fn">retrieve</span>(files)</h3>
+              <p>Search. Rank. Cite the page. No source, no claim. Refuse if it is not in the file.</p>
+            </div>
+          </li>
+          <li>
+            <span class="harness-n">3</span>
+            <div>
+              <h3><span class="fn">bind</span>(tools)</h3>
+              <p>Add domain-specific tools. Timeouts, retries, idempotency. A tool with no contract is a toy.</p>
+            </div>
+          </li>
+          <li>
+            <span class="harness-n">4</span>
+            <div>
+              <h3><span class="fn">act</span>(once)</h3>
+              <p>One call, then parse the observation. Did it error, lie, or finish? You decide before the next call.</p>
+            </div>
+          </li>
+          <li class="is-loop">
+            <span class="harness-n">5</span>
+            <div>
+              <h3><span class="fn">loop</span>(budget)</h3>
+              <p>Plan, act, observe, retry. A step cap and a spend cap.</p>
+              <div class="cycle-mark" aria-hidden="true">
+                <div class="cycle-main">
+                  <span>plan</span><i></i><span>act</span><i></i><span>obs</span>
+                </div>
+                <div class="cycle-return"></div>
+                <p>retry while budget left · else <strong>stop</strong></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span class="harness-n">6</span>
+            <div>
+              <h3><span class="fn">guard</span>(policy)</h3>
+              <p>Allowlist. A payment, a medical call, a fee waits for a human.</p>
+            </div>
+          </li>
+          <li>
+            <span class="harness-n">7</span>
+            <div>
+              <h3><span class="fn">trace</span>(eval)</h3>
+              <p>Log every call. A golden set. Cost and latency. Replay the miss tomorrow. Without this you have a demo.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="os">
+          <p class="chart-head">OSWorld · agents on real computer tasks · Index 2026 · 0 to 100</p>
+          <div class="bars true-scale">
+            <br>
+            <div class="bar-row"><span>Last year</span><div class="bar-track"><span class="bar-fill" style="--w:12%"></span></div><span class="num">~12%</span></div>
+            <div class="bar-row here"><span>Now</span><div class="bar-track"><span class="bar-fill" style="--w:66.3%"></span></div><span class="num">66.3%</span></div>
+          </div>
+          <p class="bar-axis" aria-hidden="true"><span>0</span><span>50</span><span>100</span></p>
+          <p class="chart-head tight">In companies, agents in regular use</p>
+          <div class="bars true-scale">
+            <div class="bar-row miss-row"><span>Most functions</span><div class="bar-track"><span class="bar-fill" style="--w:10%"></span></div><span class="num">≤10%</span></div>
+            <div class="bar-row here"><span>Tech software</span><div class="bar-track"><span class="bar-fill" style="--w:24%"></span></div><span class="num">24%</span></div>
+          </div>
+          <p class="os-note">On those tasks it still misses about one in three. This is not the office running itself.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="11">
+      <h2>See it: chatbots guess. A system can refuse.</h2>
+      <p class="answer wide">One Nepal question, three behaviours. Chat sounds certain. The same model over a real file shows its page or admits it does not know. A test turns that into a number.</p>
+      <p class="shared-prompt"><span>You</span> How many computers does Nepal's National AI Centre have?</p>
+      <div class="demo-chats">
+        <section class="chat-win">
+          <header>Chat on its own</header>
+          <div class="thread">
+            <p class="msg asst guessing"><span class="who">Assistant</span>The Centre has 47 NVIDIA units in a hall at Singha Durbar, opened with the policy.</p>
+            <p class="why">Clean paragraph. Plausible number. No source. If it is wrong you find out from a customer, in public.</p>
+          </div>
+          <footer class="miss">Guessing</footer>
+        </section>
+        <section class="chat-win sourced">
+          <header>Same model, given the file</header>
+          <div class="thread">
+            <p class="msg asst"><span class="who">Assistant</span>Not in this document. The policy says the centre opened in Nov 2025 and started in a small room. It does not give a computer count.</p>
+            <p class="cite">National AI Policy.pdf · no computer count</p>
+            <p class="why">It searches the file, answers only from what it found, and shows the page. If it invents 47 anyway, that is the bug.</p>
+          </div>
+          <footer class="ok">Sourced, or refused</footer>
+        </section>
+        <section class="chat-win eval">
+          <header>The test that makes it a system</header>
+          <div class="thread">
+            <p class="eval-rule">Ten questions you asked. Three cannot be answered from the file. Pass = seven sourced + three honest refusals.</p>
+            <ol class="eval-cells" aria-label="Ten test questions">
+              <li class="pass">1</li><li class="pass">2</li><li class="pass">3</li><li class="pass">4</li><li class="pass">5</li><li class="pass">6</li><li class="pass">7</li>
+              <li class="refuse">8</li><li class="refuse">9</li>
+              <li class="fail">10</li>
+            </ol>
+            <p class="eval-legend"><span class="pass">sourced</span><span class="refuse">refused</span><span class="fail">miss logged</span></p>
+            <p class="eval-score"><b>9/10</b> Run it again every time you change the prompt.</p>
+          </div>
+          <footer class="ok">Miss logged</footer>
+        </section>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="12">
+      <h2>“AI will replace those who don’t learn to use it.” What does that actually mean?</h2>
+      <p class="answer wide">Half true. Using it is the floor. Owning the loop is the job.</p>
+      <div class="split-8">
+        <div class="work-stack" aria-label="Who sits where: this room, the job, the lab">
+          <div class="stack-floor">
+            <div class="stack-top">
+              <h3>Use it</h3>
+              <p class="layer-kill">Nobody is paid for this alone.</p>
+            </div>
+            <div class="crowd" data-dots="32" data-lit="32" data-tone="floor"></div>
+            <p>Ask. Draft. Summarise. Everyone in this room. About to be expected the way email was.</p>
+          </div>
+          <div class="stack-floor career">
+            <div class="stack-top">
+              <h3>Run it</h3>
+              <p class="layer-kill">This is the job the market is short of.</p>
+            </div>
+            <div class="crowd" data-dots="32" data-lit="8" data-tone="job"></div>
+            <p>Put a model inside work with consequences. You write the test. You catch the miss. You carry the blame. You put out the fix.</p>
+          </div>
+          <div class="stack-floor thin">
+            <div class="stack-top">
+              <h3>Build it</h3>
+              <p class="layer-kill">Fewer seats. Mostly senior or abroad. Later.</p>
+            </div>
+            <div class="crowd" data-dots="32" data-lit="2" data-tone="lab"></div>
+            <p>Data, training, serving, cost and the infrastructure around it.</p>
+          </div>
+        </div>
+        <div class="prod">
+          <p class="chart-head">Stanford AI Index 2026 · extra output on structured work · 0 to 100</p>
+          <div class="bars true-scale">
+            <div class="bar-row here"><span>Software</span><div class="bar-track"><span class="bar-fill" style="--w:26%"></span></div><span class="num">26%</span></div>
+            <div class="bar-row"><span>Support</span><div class="bar-track"><span class="bar-fill" style="--w:15%"></span></div><span class="num">14–15%</span></div>
+            <div class="bar-row"><span>Marketing</span><div class="bar-track"><span class="bar-fill" style="--w:50%"></span></div><span class="num">50%</span></div>
+          </div>
+          <p class="bar-axis" aria-hidden="true"><span>0</span><span>50</span><span>100</span></p>
+          <div class="metr">
+            <p class="chart-head tight">Jobs at risk · Goldman Sachs / McKinsey, via Nexford 2026</p>
+            <div class="metr-grid">
+              <div>Equivalent of <b>300 million</b> full-time jobs</div>
+              <div><b>Two-thirds</b> of US and Europe jobs exposed</div>
+              <div>About <b>a quarter</b> of tasks could be done by AI</div>
+              <div>By 2030, <b>14%</b> of workers may need a new career</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="13">
+      <h2>Like web development, what are the AI career pathways?</h2>
+      <p class="answer wide">Web froze into four seats. AI is eight doors that overlap. Search these titles, not the word “AI”.</p>
+      <div class="families vote-row eight">
+        <div class="fam" data-vote="1">
+          <span class="n">1</span>
+          <h3>Apps</h3>
+          <ul class="titles">
+            <li><b>Forward Deployed Engineer</b></li>
+            <li>AI Integration Engineer</li>
+            <li>Applied / Full-stack GenAI</li>
+          </ul>
+        </div>
+        <div class="fam" data-vote="2">
+          <span class="n">2</span>
+          <h3>Data</h3>
+          <ul class="titles">
+            <li><b>Data Engineer</b></li>
+            <li>Data Collector</li>
+            <li>Analytics / BI</li>
+            <li>ETL / warehouse</li>
+          </ul>
+        </div>
+        <div class="fam" data-vote="3">
+          <span class="n">3</span>
+          <h3>Data science</h3>
+          <ul class="titles">
+            <li><b>Data Scientist</b></li>
+            <li>Applied Scientist</li>
+            <li>Experimentation</li>
+          </ul>
+        </div>
+        <div class="fam" data-vote="4">
+          <span class="n">4</span>
+          <h3>Platform</h3>
+          <ul class="titles">
+            <li><b>MLOps Engineer</b></li>
+            <li>LLMOps / serving</li>
+            <li>AI platform</li>
+            <li>Inference / GPU</li>
+          </ul>
+        </div>
+        <div class="fam" data-vote="5">
+          <span class="n">5</span>
+          <h3>Modelling</h3>
+          <ul class="titles">
+            <li><b>ML Engineer</b></li>
+            <li>Computer vision</li>
+            <li>NLP / speech</li>
+            <li>Ranking / recsys</li>
+          </ul>
+        </div>
+        <div class="fam" data-vote="6">
+          <span class="n">6</span>
+          <h3>Research</h3>
+          <ul class="titles">
+            <li><b>Research Scientist</b></li>
+            <li>Research Engineer</li>
+            <li>Research intern / RA</li>
+          </ul>
+        </div>
+        <div class="fam" data-vote="7">
+          <span class="n">7</span>
+          <h3>Human in the loop</h3>
+          <ul class="titles">
+            <li><b>Domain Specialist</b></li>
+            <li>Data Annotator</li>
+            <li>Evaluation / red-team</li>
+            <li>RLHF/RLAIF rater</li>
+          </ul>
+        </div>
+        <div class="fam" data-vote="8">
+          <span class="n">8</span>
+          <h3>Product</h3>
+          <ul class="titles">
+            <li><b>AI Product Manager</b></li>
+            <li>AI Risk &amp; Compliance</li>
+            <li>AI Solutions consulting</li>
+          </ul>
+        </div>
+      </div>
+      <p class="strip">“Prompt engineer” is a skill inside all eight. Pick a pathway for depth, then take it from there.</p>
+    </article>
+
+    <article class="slide packed" data-slide="14">
+      <h2>Will the AI job market settle the way web development did?</h2>
+      <p class="answer wide">My read: the work will split. The stack will not freeze. New pathways will open.</p>
+      <div class="settle">
+        <div>
+          <h3>Web froze</h3>
+          <p class="chart-head">Four spaces. Over a decade.</p>
+          <div class="seat-bar" aria-hidden="true">
+            <span>UI/UX</span>
+            <span>Frontend</span>
+            <span>Backend</span>
+            <span>DevOps</span>
+          </div>
+          <p>HTML from 2015 still runs. Enough work to keep specialists busy. A stable platform.</p>
+        </div>
+        <div>
+          <h3>AI has not</h3>
+          <p class="chart-head">Ways exist. The work still sits on top of each other.</p>
+          <div class="overlap-chart" aria-hidden="true">
+            <div class="ov-row"><span>Apps</span><div class="ov-track"><i style="--l:0%;--w:58%"></i></div></div>
+            <div class="ov-row"><span>Data</span><div class="ov-track"><i style="--l:14%;--w:58%"></i></div></div>
+            <div class="ov-row"><span>Platform</span><div class="ov-track"><i style="--l:28%;--w:58%"></i></div></div>
+            <div class="ov-row"><span>Modelling</span><div class="ov-track"><i style="--l:42%;--w:58%"></i></div></div>
+          </div>
+          <p>The model, the tools, and the titles still move. Even large teams glue more than they specialise.</p>
+        </div>
+      </div>
+      <p class="strip">Pick a path for depth. Expect to work outside it with time.</p>
+    </article>
+
+    <article class="slide packed" data-slide="15">
+      <h2>AI jobs in Nepal, and globally.</h2>
+      <p class="answer wide">LinkedIn, keyword “AI”, last 30 days, this morning. Nepal is a short list: data, then a few applied titles. The Bay Area is a wall of agent and applied-AI titles.</p>
+      <div class="jobs-compare">
+        <div class="np-chart">
+          <p class="chart-head">Nepal · what showed up, by week · n = 17 postings I opened</p>
+          <ul class="lane-key">
+            <li class="k-applied">Applied / GenAI</li>
+            <li class="k-data">Data</li>
+            <li class="k-hitl">HITL / operator</li>
+            <li class="k-sec">Security</li>
+          </ul>
+          <div class="week-chart" style="--max:8">
+            <div class="week-col">
+              <div class="week-stack">
+                <span class="seg data" style="--n:2">2</span>
+                <span class="seg hitl" style="--n:1">1</span>
+              </div>
+              <b>3 wks</b>
+              <span>Leapfrog, SunnyData, Niural</span>
+            </div>
+            <div class="week-col">
+              <div class="week-stack">
+                <span class="seg data" style="--n:2">2</span>
+                <span class="seg applied" style="--n:1">1</span>
+              </div>
+              <b>2 wks</b>
+              <span>Verisk GenAI, Abacus, Omnicom</span>
+            </div>
+            <div class="week-col">
+              <div class="week-stack">
+                <span class="seg data" style="--n:1">1</span>
+                <span class="seg hitl" style="--n:1">1</span>
+                <span class="seg applied" style="--n:1">1</span>
+              </div>
+              <b>1 wk</b>
+              <span>SDS intern, Niural compliance, Maitri DQA</span>
+            </div>
+            <div class="week-col now">
+              <div class="week-stack">
+                <span class="seg data" style="--n:3">3</span>
+                <span class="seg hitl" style="--n:1">1</span>
+                <span class="seg applied" style="--n:3">3</span>
+                <span class="seg sec" style="--n:1">1</span>
+              </div>
+              <b>This week</b>
+              <span>Niural, Azminds, Neurithum, Waft X</span>
+            </div>
+          </div>
+        </div>
+        <div class="sf-chart">
+          <p class="chart-head">Bay Area · same search · 99+ results</p>
+          <div class="sf-bars">
+            <div class="sf-row here"><span>Agent / Agentic</span><div class="bar-track"><span class="bar-fill" style="--w:100%"></span></div><span class="num">38</span></div>
+            <div class="sf-row"><span>ML Engineer</span><div class="bar-track"><span class="bar-fill" style="--w:47%"></span></div><span class="num">18</span></div>
+            <div class="sf-row"><span>Applied AI</span><div class="bar-track"><span class="bar-fill" style="--w:42%"></span></div><span class="num">16</span></div>
+            <div class="sf-row"><span>AI Engineer</span><div class="bar-track"><span class="bar-fill" style="--w:37%"></span></div><span class="num">14</span></div>
+            <div class="sf-row"><span>Eval / platform</span><div class="bar-track"><span class="bar-fill" style="--w:26%"></span></div><span class="num">10</span></div>
+            <div class="sf-row"><span>Founding / MTS</span><div class="bar-track"><span class="bar-fill" style="--w:21%"></span></div><span class="num">8</span></div>
+            <div class="sf-row"><span>Forward deployed</span><div class="bar-track"><span class="bar-fill" style="--w:16%"></span></div><span class="num">6</span></div>
+          </div>
+          <br>
+          <p class="sf-pay">Posted ranges in San Fran: about $150k to $400k.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="16">
+      <h2>How do you land an internship or a first job?</h2>
+      <p class="answer wide">Become a software or data person who can prove they can work end-to-end.</p>
+      <div class="tips-path">
+        <div class="tip">
+          <span class="n">1</span>
+          <h3>Ship</h3>
+          <p>One public project that does a real task. The README says where it fails.</p>
+        </div>
+        <div class="tip">
+          <span class="n">2</span>
+          <h3>Measure/Evaluate</h3>
+          <p>An Evaluation Rubric. Log capabilities and limitations. Evaluate in numbers.</p>
+        </div>
+        <div class="tip">
+          <span class="n">3</span>
+          <h3>Say it</h3>
+          <p>“I built X. It failed at Y. I measured Z.” Practise that out loud this week.</p>
+        </div>        
+        <div class="tip">
+          <span class="n">4</span>
+          <h3>Iterate and Optimize</h3>
+          <p>Iterate with new features/bug fixes. Optimize for latency, usability and throughput.</p>
+        </div>
+        <div class="tip">
+          <span class="n">5</span>
+          <h3>Apply</h3>
+          <p>Software/AI and data roles. Talent pools. Referrals. Reach out for mentorship.</p>
+        </div>
+      </div>
+      <ul class="kill-chips">
+        <li>Vibe coding without code review</li>
+        <li>Building projects with no measurable results or demo/documentation </li>
+        <li>Certificates with no repository</li>
+        <li>Having a GitHub full of unfinished projects</li>
+        <li>Waiting for the "right" project idea</li>
+      </ul>
+    </article>
+
+    <article class="slide packed" data-slide="17">
+      <h2>Skills, jobs, productivity, lifelong learning.</h2>
+      <p class="answer wide">A working list. Skills you can name. Moves that get you hired. Habits that keep you shipping after the course ends.</p>
+      <div class="playbook">
+        <div>
+          <h3>Skills</h3>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Git and GitHub</li>
+            <li>Data structures and algorithms</li>
+            <li>Machine learning fundamentals</li>
+            <li>Deep learning fundamentals</li>
+            <li>PyTorch / TensorFlow</li>
+            <li>LLMs and Transformers</li>
+            <li>RAG and vector databases</li>
+            <li>Prompt engineering</li>
+            <li>AI agents and tool calling</li>
+            <li>APIs and FastAPI</li>
+            <li>Docker</li>
+            <li>Cloud basics</li>
+            <li>Model evaluation</li>
+            <li>Testing and debugging</li>
+            <li>System design</li>
+            <li>Deployment and MLOps</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Jobs / Career</h3>
+          <ul>
+            <li>Build 2–4 strong projects</li>
+            <li>Deploy your projects</li>
+            <li>Have a clean GitHub</li>
+            <li>Write good READMEs</li>
+            <li>Build a portfolio</li>
+            <li>Apply before you feel ready</li>
+            <li>Tailor your CV to each role</li>
+            <li>Apply beyond “AI Engineer” titles</li>
+            <li>Network with AI engineers</li>
+            <li>Ask for referrals</li>
+            <li>Contribute to open source</li>
+            <li>Do freelance or contract work</li>
+            <li>Look for research opportunities</li>
+            <li>Practice technical interviews</li>
+            <li>Be able to explain everything on your CV</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Productivity</h3>
+          <ul>
+            <li>Ship projects instead of endlessly planning</li>
+            <li>Learn by building</li>
+            <li>Don't tutorial-hop</li>
+            <li>Use AI as a copilot, not autopilot</li>
+            <li>Keep a learning backlog</li>
+            <li>Track applications</li>
+            <li>Set weekly goals</li>
+            <li>Time-block deep work</li>
+            <li>Finish projects before starting new ones</li>
+            <li>Document what you learn</li>
+            <li>Turn mistakes into notes</li>
+            <li>Build consistently, even 1–2 hours a day</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Lifelong learning</h3>
+          <ul>
+            <li>Read papers</li>
+            <li>Follow new AI research</li>
+            <li>Reproduce interesting papers and projects</li>
+            <li>Read technical blogs</li>
+            <li>Study open-source implementations</li>
+            <li>Understand why models work, not just how to call them</li>
+            <li>Learn from production failures</li>
+            <li>Keep improving your software engineering</li>
+            <li>Learn new tools when they solve a real problem</li>
+            <li>Revisit fundamentals regularly</li>
+            <li>Build things outside your comfort zone</li>
+            <li>Stay curious about what’s changing</li>
+            <li>Never stop shipping</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="18">
+      <h2>If I want to learn the system and the architecture, where do I start?</h2>
+      <p class="answer wide">Pick any.</p>
+      <div class="arch-senior">
+        <div class="arch-band">
+          <h3>What you ship</h3>
+          <div class="arch-shapes">
+            <div>
+              <span class="n">1</span>
+              <h4>Deterministic</h4>
+              <p>If/then, search, a threshold. No model. Some of the best systems ever built stay here.</p>
+            </div>
+            <div>
+              <span class="n">2</span>
+              <h4>Classical ML</h4>
+              <p>Features in, a score out. Most production AI is still ML.</p>
+            </div>
+            <div>
+              <span class="n">3</span>
+              <h4>Retrieval + generation</h4>
+              <p>Files into a foundation or local model. Cite the source, or refuse.</p>
+            </div>
+            <div>
+              <span class="n">4</span>
+              <h4>Agents</h4>
+              <p>Tools, a loop, a stop.</p>
+            </div>
+          </div>
+        </div>
+        <div class="arch-band">
+          <h3>How weights are made</h3>
+          <div class="arch-shapes">
+            <div>
+              <span class="n">5</span>
+              <h4>Pre-training</h4>
+              <p>Compute, data, months. Frontier labs.</p>
+            </div>
+            <div>
+              <span class="n">6</span>
+              <h4>Post-training</h4>
+              <p>SFT on instructions and tools. How a base model becomes useful.</p>
+            </div>
+            <div>
+              <span class="n">7</span>
+              <h4>RL / preference</h4>
+              <p>RLHF, DPO, GRPO. A reward, a preference, a policy.</p>
+            </div>
+            <div>
+              <span class="n">8</span>
+              <h4>Adaptation</h4>
+              <p>LoRA, fine-tune, distill on <em>your</em> data. The only training most of you will touch.</p>
+            </div>
+          </div>
+        </div>
+        <div class="arch-books">
+          <h3>Read these, in this order</h3>
+          <div class="book-row">
+            <div>
+              <b>Designing Data-Intensive Applications</b>
+              <span>Kleppmann</span>
+              <p>The data plane under every serious system. Storage, batch, stream, failure.</p>
+            </div>
+            <div>
+              <b>Designing Machine Learning Systems</b>
+              <span>Chip Huyen</span>
+              <p>Classical ML as a factory. Data, features, training, serving, drift.</p>
+            </div>
+            <div>
+              <b>AI Engineering</b>
+              <span>Chip Huyen</span>
+              <p>Foundation models as a product. RAG, eval, agents, adaptation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide packed" data-slide="19">
+      <h2>Challenges, and the data-center feud: what is the case?</h2>
+      <p class="answer wide">Same four everywhere: power, data, people, rules.</p>
+      <div class="chal-split">
+        <div>
+          <p class="chart-head">NEA FY 2025/26 · megawatts · 0 to 4,120.</p>
+          <div class="bars true-scale">
+            <div class="bar-row here"><span>Installed</span><div class="bar-track"><span class="bar-fill" style="--w:100%"></span></div><span class="num">4,120</span></div>
+            <div class="bar-row"><span>Peak demand</span><div class="bar-track"><span class="bar-fill" style="--w:78.3%"></span></div><span class="num">3,226</span></div>
+            <div class="bar-row miss-row"><span>Listed AI compute centers</span><div class="bar-track"><span class="bar-fill" style="--w:0.5%"></span></div><span class="num">~15–20</span></div>
+          </div>
+          <p class="bar-axis mw-axis" aria-hidden="true"><span>0</span><span>2,060</span><span>4,120 MW</span></p>
+        </div>
+        <div class="chal-4">
+          <div>
+            <h3>Power</h3>
+            <p>Always-on compute is industrial. Here: export in the wet months, still import in the dry ones.</p>
+          </div>
+          <div>
+            <h3>Data</h3>
+            <p>The spreadsheet, not the GPU.</p>
+          </div>
+          <div>
+            <h3>People</h3>
+            <p>Talent is mobile. Here: Rs 138.48 billion left for foreign tuition in one year with no signs of stopping.</p>
+          </div>
+          <div>
+            <h3>Rules</h3>
+            <p>Few countries have an AI Act. Here: banks have a book since Dec 2025. The rest guess.</p>
+          </div>
+        </div>
+      </div>
+      <p class="strip">The fight is not pro-AI versus anti-AI. But on who gets the electricity. Who agreed to live next to it.</p>
+    </article>
+
+    <article class="slide packed" data-slide="20">
+      <h2>Ethics, privacy, governance, and the road ahead in Nepal.</h2>
+      <p class="answer wide">Four questions for any system. The law is thinner than the duty. That is the road ahead, here and everywhere.</p>
+      <div class="ethics">
+        <div>
+          <h3>Privacy</h3>
+          <p>What left the room. Who stored the prompt. Who can see it later. Consent is a design choice, not a footer.</p>
+        </div>
+        <div>
+          <h3>Fairness</h3>
+          <p>Who is in the data. Who is not. When it misses, who pays. Errors do not fall evenly.</p>
+        </div>
+        <div>
+          <h3>Accountability</h3>
+          <p>Whose name is on the miss. The vendor, the bank, the ministry, you. If nobody owns it, it is not a system.</p>
+        </div>
+        <div>
+          <h3>Governance</h3>
+          <p>Who wrote the stop. What it may never do. Who can audit the log. A rulebook, or a vibe.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide qa-slide" data-slide="21">
+      <h1>Q&amp;A</h1>
+      <p class="repeat">Anyone can prompt. Very few people can make an AI system work. That is the career.</p>
+    </article>
+
+    <div class="help" id="help">
+      <h2>Presenter keys</h2>
+      <p><kbd>→</kbd><kbd>Space</kbd> Next slide</p>
+      <p><kbd>←</kbd> Previous</p>
+      <p><kbd>1</kbd>–<kbd>8</kbd> Highlight a door on the job map</p>
+      <p><kbd>F</kbd> Fullscreen · <kbd>B</kbd> Blackout · <kbd>C</kbd> Elapsed clock</p>
+      <p><kbd>#12</kbd> Jump via URL hash · <kbd>?</kbd> This panel</p>
+    </div>
+
+    <div class="progress" aria-hidden="true"><i></i></div>
+    <footer class="rail">
+      <span class="rail-left">
+        <span data-counter>01 / 21</span>
+        <span class="rail-speaker">Subash Pandey · AI/ML Engineer</span>
+        <span data-elapsed hidden>00:00</span>
+      </span>
+      <span class="rail-meta">ICT Meetup v8.0 · Saturday 5 September 2026 · Prime College, Khusibun</span>
+      <div class="rail-marks">
+        <img src="../assets/event-marks/ict-meetup-logo.png" alt="ICT Meetup v8.0">
+        <img src="../assets/event-marks/prime-it-club-site.png" alt="Prime IT Club">
+      </div>
+    </footer>
+  </div>
+  <script src="deck.js"></script>
+</body>
+</html>

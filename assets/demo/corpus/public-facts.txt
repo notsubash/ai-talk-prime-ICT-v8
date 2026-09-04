@@ -1,0 +1,9 @@
+National AI Policy: Cabinet approved 11 August 2025.
+
+National AI Centre opened 10 November 2025. Reporting described it as starting in a small room.
+
+Budget speech 29 May 2026: Sovereign AI Compute Center, Syuchatar, “thousands” of processing units. Announced. Not a commissioned cluster in this file.
+
+Public GPU count at the Centre: not in this file. NO RELIABLE DATA.
+
+This corpus is public facts only. No client data. Used by assets/demo/offline-demo.html if wifi dies.
