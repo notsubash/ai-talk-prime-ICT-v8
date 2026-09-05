@@ -288,6 +288,7 @@ h2 {
   align-items: center;
   gap: 20px;
   min-width: 280px;
+  max-width: 760px;
 }
 
 .rail-speaker {
@@ -301,6 +302,31 @@ h2 {
 
 .stage.on-title .rail-speaker {
   display: inline;
+}
+
+.rail-next {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.rail-next[hidden] {
+  display: none;
+}
+
+.rail-next-k {
+  flex: none;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.rail-next [data-next] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--dim);
 }
 
 .rail-meta {

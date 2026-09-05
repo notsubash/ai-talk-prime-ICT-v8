@@ -3,6 +3,8 @@
   const slides = [...document.querySelectorAll(".slide")];
   const progress = document.querySelector(".progress > i");
   const counter = document.querySelector("[data-counter]");
+  const nextEl = document.querySelector("[data-next]");
+  const nextRail = document.querySelector(".rail-next");
   const elapsedEl = document.querySelector("[data-elapsed]");
   const help = document.querySelector(".help");
   const timerEl = document.querySelector("[data-fair-timer]");
@@ -19,6 +21,11 @@
   let vote = 0;
 
   const frags = (slide) => [...slide.querySelectorAll(".frag")];
+
+  function slideLabel(slide) {
+    const heading = slide.querySelector("h2, h1");
+    return heading ? heading.innerText.replace(/\s+/g, " ").trim() : "";
+  }
 
   function fit() {
     const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
@@ -67,6 +74,13 @@
       "on-title",
       slide.classList.contains("title-slide") || slide.classList.contains("intro-slide")
     );
+
+    const upcoming = slides[index + 1];
+    const hint = upcoming ? slideLabel(upcoming) : "";
+    if (nextEl) nextEl.textContent = hint;
+    if (nextRail) {
+      nextRail.hidden = !hint || slide.classList.contains("title-slide");
+    }
 
     const seats = slide.querySelector("[data-seats]");
     if (seats) {
