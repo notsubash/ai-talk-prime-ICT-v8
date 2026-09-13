@@ -9,26 +9,9 @@ Subash Pandey · AI/ML Engineer
 
 ---
 
-## What you are arguing
-
-Three sentences. If the room remembers only these, you won.
-
-1. Nepal is **strong on people, thin on products, loud on paper**.
-2. Chat spread. Working systems did not. An AI industry is products with buyers, tests, and owners, not a policy PDF.
-3. **Anyone can prompt. Very few people can make an AI system work. That is the career.**
-
-Do not turn this into AI-101. Do not explain transformers. Do not praise ChatGPT. Treat Nepal evidence as the product.
-
----
-
 ## Before the room
 
 - Serve from the **repo root**, not from `slides/`. Relative assets break if the server root is the slides folder.
-- Fullscreen (`F`). Confirm 16:9. Confirm black is actually black, not grey wash from a projector.
-- Open a second window on `assets/demo/offline-demo.html` in case you want the backup stills. Keys `1` `2` `3`.
-- Hash-jump works: `slides/index.html#11` is the demo slide.
-- Phone on silent. Clicker: right/left or space. A click on the stage also advances; do not rest the cursor on the glass.
-- You do not need wifi for the talk. You need wifi only if you insist on a live model. Do not insist.
 
 ```bash
 python -m http.server 8080
@@ -37,43 +20,6 @@ python -m http.server 8080
 
 Any static server from the repo root is fine.
 
-### Keys
-
-| Key | Action |
-|---|---|
-| `→` `Space` `Enter` `PageDown` click | Next |
-| `←` `Backspace` `PageUp` | Previous |
-| `1`–`8` | Highlight a career door on slide 13 |
-| `F` | Fullscreen |
-| `B` | Blackout (AV panic, phone photo, wait for the room) |
-| `Home` / `End` | First / last |
-| `#12` in the URL | Jump |
-| `?` or `h` | Help overlay |
-
-There are no click-reveals. Next always changes the slide. The footer shows **Next** plus the coming heading so you can set up the turn without looking at notes.
-
----
-
-## How to speak this deck
-
-Each slide is one organiser question. The one-line **answer is already on the glass**. Read it, then pick two or three named things. Do not narrate the ledger.
-
-**The glass does:** names, dates, bars, the short version.
-**You do:** the judgement, the pause, the “I could not find this”, the ask to the room.
-
-Voice: even, specific, slightly dry. You are not selling AI. You are reporting what is actually running.
-
-Pacing: packed slides are maps. Stand on the answer line, point, move. If you start reading CloudFactory → Leapfrog → Cotiviti → Verisk you have lost the room.
-
-Honesty is the style. “Couldn’t find what this Centre does” is a line, not an apology. “There is no register” is a line. Do not paper over holes with “the ecosystem is booming”.
-
-Numbers: say them once. Some are schematic (funding gap bars). The LinkedIn counts are a morning snapshot and they age. Attribute, then leave them.
-
-Photos on the intro: let them sit. Do not narrate Tower Bridge.
-
-If you have to cut, keep **4, 11, 13, 16, 21**. That is the talk: where we stand, what a system is, which door, how a first job happens, then Q&A. Skip 14, 15, 17, 18 first.
-
----
 
 ## Beat sheet
 
@@ -290,60 +236,6 @@ Then “questions.” Do not add a new thesis here.
 
 ---
 
-## Q&A you should expect
-
-**Isn’t Nepal already doing AI? We all use ChatGPT.**
-That is slide 4 and 12. Use is the floor. An industry is products, tests, and owners.
-
-**Should I fine-tune Llama?**
-Usually no. Start with a spec, files, and an eval. Adaptation is door 8 on slide 18, after you can measure a miss.
-
-**Which pathway should I pick?**
-In this room: software or data first (slide 17), then Apps or Data titles (slide 13). Search the bold title, not “AI”.
-
-**How do I get into OpenAI / Anthropic?**
-Campus path on slide 9: internships, student researcher, labs, YC. It is not a Kathmandu listing. Build the public trail on slide 16 anyway.
-
-**Is the National AI Centre real?**
-It opened. You could not find what it does. You will not invent a GPU count. That is the demo.
-
-**Will AI take our jobs?**
-Half true. Using it stops being a differentiator. Running the loop is the shortage. Macros are on slide 12; do not pretend they are a Nepal labour study.
-
-**Should Nepal build a giant data center?**
-Slide 19. Factory scale, monsoon surplus, not a hyperscaler. Dry months we still import. Lights need two feeds.
-
-**Can you show a live agent?**
-No. Slide 11 is the demonstration. Live agents fail in public in exactly the way the first pane warns about.
-
-**Isn’t StartupBlink proof we have an AI scene?**
-#101 and 109 listed. Mostly wallets and tutorials. Not a register of AI startups. You said there isn’t one.
-
-**What should the government do?**
-You are not the ministry. The glass already says: implementation, not another PDF; models in services, not only VMs; measure the things on slide 4 that currently have question marks.
-
-If you do not know, say you do not know. That is on-brand.
-
----
-
-## What you will not claim
-
-- A GPU or computer count for the National AI Centre.
-- That the Centre, the policy, or the compute budget line is an industry.
-- That 927 government VMs are AI.
-- That Nagarik App has an AI feature you will stand behind.
-- A count of Nepal AI startups, state-owned AI computers, or AI’s share of IT exports.
-- That export SWE benches (Leapfrog, Cotiviti, Verisk, Wiseyak, Deerwalk) are Nepal-owned AI products.
-- That ChestGuru is deployed care. It is a trial.
-- That Lamina is a Kathmandu company. Founders Nepali, company SF.
-- That OSWorld 66.3% means agents run the office.
-- That SF salaries transfer.
-- Client data, internal evals, or anything not on the public corpus.
-
-If a number is not on the glass, it is not in the talk.
-
----
-
 ## Files
 
 | Path | What |
@@ -353,5 +245,3 @@ If a number is not on the glass, it is not in the talk.
 | `slides/styles.css` | 1920×1080 stage, scaled to the window |
 | `assets/demo/offline-demo.html` | Wifi-death stills, keys 1–2–3 |
 | `assets/demo/corpus/public-facts.txt` | Public facts only. Policy date, Centre opening, budget speech, no GPU count |
-
-Reuse: change the rail in `slides/index.html` (date, venue, marks) and re-check LinkedIn / StartupBlink lines on slides 9 and 15. The argument does not depend on the event marks.
